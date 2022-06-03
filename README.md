@@ -10,7 +10,7 @@ unready 假定slave的ready信号不满足时序要求，要对ready信号用寄
 invalid and unready 假定valid和ready信号都不满足时序要求，都需要用寄存器打一拍，实现该总线握手场景；
 
 实现要求：
-1) 实现上述总线同步握手场景，不考虑异步场景；
-2) 假定master的valid信号不满足时序要求，要对valid信号用寄存器打一拍，实现该总线握手场景；
-3) 假定slave的ready信号不满足时序要求，要对ready信号用寄存器打一拍，实现该总线握手场景；
-4) 假定valid和ready信号都不满足时序要求，都需要用寄存器打一拍，实现该总线握手场景；
+1) valid and ready 实现上述总线同步握手场景，不考虑异步场景；
+2) invalid 假定master的valid信号不满足时序要求，要对valid信号用寄存器打一拍，实现该总线握手场景；
+3) unready 假定slave的ready信号不满足时序要求，要对ready信号用寄存器打一拍，实现该总线握手场景；
+4) invalid and unready 假定valid和ready信号都不满足时序要求，都需要用寄存器打一拍，实现该总线握手场景；
